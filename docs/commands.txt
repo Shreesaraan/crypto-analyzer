@@ -1,0 +1,20 @@
+#Commands
+
+#Navigating to kafka folder
+cd ~/kafka_2.13-3.5.1/
+
+#Zookeeper
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+#Kafka Server
+bin/kafka-server-start.sh config/server.properties
+
+#Navigating to the project folder
+cd ~/DE/Projects/crypto-analyzer
+
+#enteringVenv
+source venv/bin/activate
+
+#scripts
+python producer.py
+python consumer.py
